@@ -116,6 +116,8 @@ components:
 
 # Design System: Local Note
 
+> 设计系统源文件。产品入口见 [README.md](./README.md)，文档索引见 [docs/README.md](./docs/README.md)。
+
 ## 1. Overview
 
 **Creative North Star: "The Daylight Desk"**

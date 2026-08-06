@@ -18,3 +18,11 @@ Docs are local at `node_modules/vite-plus/docs` or online at https://viteplus.de
 - [ ] If setup, runtime, or package-manager behavior looks wrong, run `vp env doctor` and include its output when asking for help.
 
 <!--VITE PLUS END-->
+
+# Local Note 项目要点
+
+- 产品：本地优先笔记；IndexedDB；无账号 / 同步 / Router / Pinia。
+- 入口文档：[README.md](./README.md)、[docs/README.md](./docs/README.md)。
+- 业务规则在 `src/domain/`，数据层在 `src/data/database.ts`，状态在 `src/composables/useLocalNote.ts`。
+- 默认分组 ID 为 `__default__`，不可删除；不要恢复「未分组」系统入口。
+- 验证优先定向范围；全仓 `vp check` 若触碰无关文档格式问题，先对 `src/` 验证。

@@ -1,5 +1,10 @@
 # Local Note MVP 执行计划
 
+> **状态：历史归档（已实施）**  
+> 本文档记录 MVP 落地时的分阶段计划与验收清单，**不再作为待办**。  
+> 现行说明请看 [README.md](../README.md)、[PRODUCT.md](../PRODUCT.md)、[product-requirements.md](./product-requirements.md)。  
+> 实施后产品有调整：无「未分组」入口、默认分组不可删除、内容区最大宽度 1280px。
+
 ## 1. 计划信息
 
 - 执行项目：`D:\codetest\local-note`

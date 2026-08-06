@@ -48,3 +48,10 @@ Local Note 是本地优先的极简在线记事本。数据保存在当前浏览
 - 尊重 `prefers-reduced-motion`
 - 触控目标在移动端足够大
 - 错误与空状态有可读文案，不只靠颜色传达
+
+## Docs
+
+- 仓库入口：[README.md](./README.md)
+- 文档索引：[docs/README.md](./docs/README.md)
+- 完整 PRD：[docs/product-requirements.md](./docs/product-requirements.md)
+- 设计系统：[DESIGN.md](./DESIGN.md)
