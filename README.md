@@ -20,7 +20,7 @@
 | 工具链 | [Vite+](https://viteplus.dev/guide/)（`vp`） |
 | 状态   | 单一 composable，无 Pinia / Router           |
 | 存储   | 浏览器原生 IndexedDB                         |
-| 部署   | Cloudflare Pages（`wrangler.toml`）          |
+| 部署   | Cloudflare Pages（Git 集成）                 |
 
 ## 快速开始
 
@@ -40,40 +40,29 @@ vp preview
 
 ### 常用命令
 
-| 命令                    | 说明                               |
-| ----------------------- | ---------------------------------- |
-| `vp install`            | 安装依赖                           |
-| `vp dev`                | 开发服务器                         |
-| `vp check`              | 格式化检查 + Lint + 类型检查       |
-| `vp test`               | 运行单元测试（`src/**/*.test.ts`） |
-| `vp run build`          | `vue-tsc -b` + 生产构建            |
-| `pnpm run pages:dev`    | 构建后用 Wrangler 本地预览 Pages   |
-| `pnpm run pages:deploy` | 构建并部署到 Cloudflare Pages      |
-| `pnpm run cf:deploy`    | 仅部署已有 `dist`（CI 构建后用）   |
+| 命令           | 说明                               |
+| -------------- | ---------------------------------- |
+| `vp install`   | 安装依赖                           |
+| `vp dev`       | 开发服务器                         |
+| `vp check`     | 格式化检查 + Lint + 类型检查       |
+| `vp test`      | 运行单元测试（`src/**/*.test.ts`） |
+| `vp run build` | `vue-tsc -b` + 生产构建            |
 
-首次部署前登录：`pnpm dlx wrangler@4.28.0 login`。
+### Cloudflare Pages 部署
 
-### Cloudflare 构建设置
+在 Cloudflare Pages 网页连接 GitHub 或 GitLab 仓库，然后配置：
 
-构建日志里的失败点：
-
-1. **Build 已成功**（`pnpm run build` → `dist/`）
-2. **Deploy 失败**：`npx wrangler deploy` 走 npm，与 `devEngines.packageManager = pnpm` 冲突 → `EBADDEVENGINES`
-
-请把控制台改成：
-
-| 项                     | 值                                                 |
-| ---------------------- | -------------------------------------------------- |
-| Build command          | `pnpm install --frozen-lockfile && pnpm run build` |
-| Deploy command         | `pnpm run cf:deploy`                               |
-| Build output directory | `dist`                                             |
-| Node.js                | 22 或 24                                           |
+| 项                     | 值               |
+| ---------------------- | ---------------- |
+| Production branch      | 仓库的生产分支   |
+| Build command          | `pnpm run build` |
+| Build output directory | `dist`           |
 
 说明：
 
-- 必须用 **pnpm**，不要用 `npx wrangler ...`
-- 部署命令必须是 **`pages deploy`**，不是裸 `wrangler deploy`
-- 若 Pages 已配置「构建产物目录自动发布」，Deploy command 可留空
+- Cloudflare 会根据 `pnpm-lock.yaml` 安装依赖，Build command 不需要再次执行 `pnpm install`。
+- Git 集成会在构建成功后自动发布 `dist`，项目不需要额外的部署步骤。
+- 后续推送到生产分支时，Cloudflare Pages 会自动重新构建并发布。
 
 ## 目录结构
 
@@ -90,7 +79,6 @@ src/
 docs/                      # 产品与实现文档
 PRODUCT.md                 # 产品与品牌简报
 DESIGN.md                  # 设计系统
-wrangler.toml              # Cloudflare Pages 配置
 ```
 
 ## 数据说明
