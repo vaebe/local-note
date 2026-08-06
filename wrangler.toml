@@ -1,0 +1,22 @@
+# Cloudflare Pages 配置
+# 文档：https://developers.cloudflare.com/pages/
+#
+# 本地预览生产产物：
+#   vp run build
+#   npx wrangler pages dev dist
+#
+# 部署到 Cloudflare Pages：
+#   vp run build
+#   npx wrangler pages deploy dist
+#
+# 若使用 Git 集成（Dashboard 连接仓库），构建设置建议：
+#   Build command  : pnpm install && pnpm run build
+#   Build output   : dist
+#   Root directory : /
+#   Node.js version: 22 或 24
+
+name = "local-note"
+compatibility_date = "2026-08-06"
+
+# Pages 静态产物目录（与 Vite 的 outDir 一致）
+pages_build_output_dir = "dist"

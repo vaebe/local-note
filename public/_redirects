@@ -1,0 +1,4 @@
+# SPA 回退：未知路径统一交给 index.html
+# 当前应用无前端路由，保留此项便于后续扩展与错误路径访问
+# https://developers.cloudflare.com/pages/configuration/redirects/
+/*    /index.html   200

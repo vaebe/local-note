@@ -1,0 +1,453 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-06T11:30:00.000Z",
+  "title": "Design System: Local Note",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Sun Gold",
+        "canonical": "oklch(0.78 0.13 78)",
+        "tonalRamp": [
+          "oklch(0.28 0.04 70)",
+          "oklch(0.4 0.08 78)",
+          "oklch(0.55 0.12 78)",
+          "oklch(0.62 0.13 78)",
+          "oklch(0.72 0.14 78)",
+          "oklch(0.78 0.13 78)",
+          "oklch(0.9 0.06 78)",
+          "oklch(0.96 0.03 78)"
+        ]
+      },
+      "primary-hover": {
+        "role": "primary",
+        "displayName": "Sun Gold Hover",
+        "canonical": "oklch(0.72 0.14 78)",
+        "tonalRamp": [
+          "oklch(0.28 0.04 70)",
+          "oklch(0.4 0.08 78)",
+          "oklch(0.55 0.12 78)",
+          "oklch(0.62 0.13 78)",
+          "oklch(0.72 0.14 78)",
+          "oklch(0.78 0.13 78)",
+          "oklch(0.9 0.06 78)",
+          "oklch(0.96 0.03 78)"
+        ]
+      },
+      "primary-soft": {
+        "role": "primary",
+        "displayName": "Sun Mist",
+        "canonical": "oklch(0.96 0.03 78)",
+        "tonalRamp": [
+          "oklch(0.4 0.08 78)",
+          "oklch(0.62 0.13 78)",
+          "oklch(0.78 0.13 78)",
+          "oklch(0.88 0.07 78)",
+          "oklch(0.92 0.05 78)",
+          "oklch(0.95 0.035 78)",
+          "oklch(0.96 0.03 78)",
+          "oklch(0.99 0.01 78)"
+        ]
+      },
+      "primary-ink": {
+        "role": "primary",
+        "displayName": "Sun Ink",
+        "canonical": "oklch(0.4 0.08 78)",
+        "tonalRamp": [
+          "oklch(0.22 0.03 70)",
+          "oklch(0.28 0.04 70)",
+          "oklch(0.34 0.06 78)",
+          "oklch(0.4 0.08 78)",
+          "oklch(0.55 0.1 78)",
+          "oklch(0.72 0.12 78)",
+          "oklch(0.88 0.06 78)",
+          "oklch(0.96 0.03 78)"
+        ]
+      },
+      "on-accent": {
+        "role": "primary",
+        "displayName": "On Accent",
+        "canonical": "oklch(0.28 0.04 70)",
+        "tonalRamp": [
+          "oklch(0.18 0.03 70)",
+          "oklch(0.22 0.03 70)",
+          "oklch(0.28 0.04 70)",
+          "oklch(0.34 0.05 70)",
+          "oklch(0.45 0.04 70)",
+          "oklch(0.62 0.03 70)",
+          "oklch(0.85 0.02 70)",
+          "oklch(0.98 0.01 70)"
+        ]
+      },
+      "neutral-bg": {
+        "role": "neutral",
+        "displayName": "Daylight BG",
+        "canonical": "oklch(0.985 0.006 78)",
+        "tonalRamp": [
+          "oklch(0.26 0.02 70)",
+          "oklch(0.38 0.02 70)",
+          "oklch(0.5 0.018 70)",
+          "oklch(0.7 0.015 78)",
+          "oklch(0.84 0.015 78)",
+          "oklch(0.91 0.012 78)",
+          "oklch(0.975 0.01 78)",
+          "oklch(0.995 0.003 78)"
+        ]
+      },
+      "neutral-elevated": {
+        "role": "neutral",
+        "displayName": "Elevated",
+        "canonical": "oklch(0.995 0.003 78)",
+        "tonalRamp": [
+          "oklch(0.26 0.02 70)",
+          "oklch(0.38 0.02 70)",
+          "oklch(0.5 0.018 70)",
+          "oklch(0.7 0.015 78)",
+          "oklch(0.84 0.015 78)",
+          "oklch(0.91 0.012 78)",
+          "oklch(0.975 0.01 78)",
+          "oklch(0.995 0.003 78)"
+        ]
+      },
+      "neutral-sidebar": {
+        "role": "neutral",
+        "displayName": "Sidebar Light",
+        "canonical": "oklch(0.975 0.01 78)",
+        "tonalRamp": [
+          "oklch(0.26 0.02 70)",
+          "oklch(0.38 0.02 70)",
+          "oklch(0.5 0.018 70)",
+          "oklch(0.7 0.015 78)",
+          "oklch(0.84 0.015 78)",
+          "oklch(0.91 0.012 78)",
+          "oklch(0.975 0.01 78)",
+          "oklch(0.995 0.003 78)"
+        ]
+      },
+      "neutral-text": {
+        "role": "neutral",
+        "displayName": "Body Ink",
+        "canonical": "oklch(0.38 0.02 70)",
+        "tonalRamp": [
+          "oklch(0.22 0.02 70)",
+          "oklch(0.26 0.02 70)",
+          "oklch(0.32 0.02 70)",
+          "oklch(0.38 0.02 70)",
+          "oklch(0.46 0.018 70)",
+          "oklch(0.56 0.016 70)",
+          "oklch(0.75 0.01 70)",
+          "oklch(0.95 0.005 70)"
+        ]
+      },
+      "neutral-strong": {
+        "role": "neutral",
+        "displayName": "Strong Ink",
+        "canonical": "oklch(0.26 0.02 70)",
+        "tonalRamp": [
+          "oklch(0.18 0.02 70)",
+          "oklch(0.22 0.02 70)",
+          "oklch(0.26 0.02 70)",
+          "oklch(0.32 0.02 70)",
+          "oklch(0.4 0.02 70)",
+          "oklch(0.56 0.015 70)",
+          "oklch(0.8 0.01 70)",
+          "oklch(0.97 0.005 70)"
+        ]
+      },
+      "neutral-muted": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "oklch(0.5 0.018 70)",
+        "tonalRamp": [
+          "oklch(0.26 0.02 70)",
+          "oklch(0.34 0.02 70)",
+          "oklch(0.42 0.018 70)",
+          "oklch(0.5 0.018 70)",
+          "oklch(0.58 0.016 70)",
+          "oklch(0.7 0.012 70)",
+          "oklch(0.85 0.008 70)",
+          "oklch(0.96 0.004 70)"
+        ]
+      },
+      "placeholder": {
+        "role": "neutral",
+        "displayName": "Placeholder",
+        "canonical": "oklch(0.56 0.016 70)",
+        "tonalRamp": [
+          "oklch(0.32 0.02 70)",
+          "oklch(0.4 0.018 70)",
+          "oklch(0.48 0.016 70)",
+          "oklch(0.56 0.016 70)",
+          "oklch(0.64 0.014 70)",
+          "oklch(0.76 0.01 70)",
+          "oklch(0.88 0.008 70)",
+          "oklch(0.97 0.004 70)"
+        ]
+      },
+      "neutral-border": {
+        "role": "neutral",
+        "displayName": "Border Quiet",
+        "canonical": "oklch(0.91 0.012 78)",
+        "tonalRamp": [
+          "oklch(0.5 0.02 78)",
+          "oklch(0.65 0.018 78)",
+          "oklch(0.78 0.015 78)",
+          "oklch(0.84 0.014 78)",
+          "oklch(0.91 0.012 78)",
+          "oklch(0.94 0.01 78)",
+          "oklch(0.97 0.008 78)",
+          "oklch(0.99 0.004 78)"
+        ]
+      },
+      "neutral-border-strong": {
+        "role": "neutral",
+        "displayName": "Border Strong",
+        "canonical": "oklch(0.84 0.02 78)",
+        "tonalRamp": [
+          "oklch(0.45 0.02 78)",
+          "oklch(0.58 0.02 78)",
+          "oklch(0.7 0.02 78)",
+          "oklch(0.78 0.02 78)",
+          "oklch(0.84 0.02 78)",
+          "oklch(0.9 0.015 78)",
+          "oklch(0.95 0.01 78)",
+          "oklch(0.99 0.004 78)"
+        ]
+      },
+      "danger": {
+        "role": "danger",
+        "displayName": "Danger",
+        "canonical": "oklch(0.54 0.18 25)",
+        "tonalRamp": [
+          "oklch(0.28 0.12 25)",
+          "oklch(0.38 0.15 25)",
+          "oklch(0.46 0.17 25)",
+          "oklch(0.54 0.18 25)",
+          "oklch(0.64 0.16 25)",
+          "oklch(0.76 0.1 25)",
+          "oklch(0.9 0.05 25)",
+          "oklch(0.97 0.02 25)"
+        ]
+      },
+      "success": {
+        "role": "success",
+        "displayName": "Success",
+        "canonical": "oklch(0.52 0.09 150)",
+        "tonalRamp": [
+          "oklch(0.28 0.06 150)",
+          "oklch(0.38 0.07 150)",
+          "oklch(0.46 0.08 150)",
+          "oklch(0.52 0.09 150)",
+          "oklch(0.62 0.08 150)",
+          "oklch(0.76 0.06 150)",
+          "oklch(0.9 0.03 150)",
+          "oklch(0.97 0.015 150)"
+        ]
+      },
+      "status-lamp": {
+        "role": "primary",
+        "displayName": "Sun Lamp",
+        "canonical": "oklch(0.76 0.12 78)",
+        "tonalRamp": [
+          "oklch(0.4 0.08 78)",
+          "oklch(0.55 0.1 78)",
+          "oklch(0.65 0.12 78)",
+          "oklch(0.72 0.13 78)",
+          "oklch(0.76 0.12 78)",
+          "oklch(0.84 0.08 78)",
+          "oklch(0.92 0.05 78)",
+          "oklch(0.97 0.02 78)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display / Note Title",
+        "purpose": "笔记标题与空状态/对话框标题。禁止用于按钮与 nav。"
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "空状态、致命错误、对话框标题。"
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "UI 默认文字。"
+      },
+      "prose": {
+        "displayName": "Prose",
+        "purpose": "笔记正文，更宽行高。"
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "侧栏分区与菜单小标题，短词 uppercase。"
+      }
+    },
+    "shadows": [
+      {
+        "name": "sm",
+        "value": "0 1px 2px oklch(0.35 0.03 70 / 0.05)",
+        "purpose": "轻微分界。"
+      },
+      {
+        "name": "soft",
+        "value": "0 6px 16px oklch(0.35 0.03 70 / 0.07)",
+        "purpose": "小浮层，如侧栏唤起按钮。"
+      },
+      {
+        "name": "modal",
+        "value": "0 10px 28px oklch(0.35 0.03 70 / 0.08), 0 2px 6px oklch(0.35 0.03 70 / 0.04)",
+        "purpose": "对话框、菜单、移动端抽屉。"
+      }
+    ],
+    "motion": [
+      {
+        "name": "duration-standard",
+        "value": "200ms",
+        "purpose": "默认状态过渡。"
+      },
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "ease-out 指数曲线，用于状态反馈。"
+      }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "767px" },
+      { "name": "tablet", "value": "1023px" },
+      { "name": "desktop", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "主操作：新建笔记、确认等。亮金底深色字。",
+      "html": "<button class=\"ds-btn-primary\" type=\"button\">新建笔记</button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 16px;border:none;border-radius:10px;background:oklch(0.78 0.13 78);color:oklch(0.28 0.04 70);font:550 16px/1.2 \"Source Sans 3\",\"Noto Sans SC\",system-ui,sans-serif;cursor:pointer;transition:background-color .2s cubic-bezier(.22,1,.36,1),transform .2s cubic-bezier(.22,1,.36,1)}.ds-btn-primary:hover{background:oklch(0.72 0.14 78)}.ds-btn-primary:active{transform:translateY(1px)}.ds-btn-primary:focus-visible{outline:2px solid oklch(0.62 0.12 78);outline-offset:2px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "次要操作与取消。",
+      "html": "<button class=\"ds-btn-ghost\" type=\"button\">取消</button>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 16px;border:1px solid oklch(0.84 0.02 78);border-radius:10px;background:transparent;color:oklch(0.26 0.02 70);font:550 16px/1.2 \"Source Sans 3\",\"Noto Sans SC\",system-ui,sans-serif;cursor:pointer;transition:background-color .2s cubic-bezier(.22,1,.36,1)}.ds-btn-ghost:hover{background:oklch(0.45 0.04 78 / 0.07)}.ds-btn-ghost:focus-visible{outline:2px solid oklch(0.62 0.12 78);outline-offset:2px}"
+    },
+    {
+      "name": "Danger Button",
+      "kind": "button",
+      "refersTo": "button-danger",
+      "description": "破坏性确认，如删除。",
+      "html": "<button class=\"ds-btn-danger\" type=\"button\">删除笔记</button>",
+      "css": ".ds-btn-danger{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 16px;border:none;border-radius:10px;background:oklch(0.54 0.18 25);color:#fff;font:550 16px/1.2 \"Source Sans 3\",\"Noto Sans SC\",system-ui,sans-serif;cursor:pointer;transition:filter .2s cubic-bezier(.22,1,.36,1)}.ds-btn-danger:hover{filter:brightness(.96)}.ds-btn-danger:focus-visible{outline:2px solid oklch(0.62 0.12 78);outline-offset:2px}"
+    },
+    {
+      "name": "Nav Item",
+      "kind": "nav",
+      "refersTo": "nav-item",
+      "description": "侧栏筛选与笔记行默认态。",
+      "html": "<button class=\"ds-nav-item\" type=\"button\"><span>全部笔记</span><span class=\"ds-nav-count\">12</span></button>",
+      "css": ".ds-nav-item{width:100%;display:flex;align-items:center;gap:8px;min-height:40px;padding:8px 11px;border:none;border-radius:10px;background:transparent;color:oklch(0.38 0.02 70);font:400 16px/1.4 \"Source Sans 3\",\"Noto Sans SC\",system-ui,sans-serif;text-align:left;cursor:pointer;transition:background-color .2s cubic-bezier(.22,1,.36,1),color .2s cubic-bezier(.22,1,.36,1)}.ds-nav-item:hover{background:oklch(0.45 0.04 78 / 0.07);color:oklch(0.26 0.02 70)}.ds-nav-item:focus-visible{outline:2px solid oklch(0.62 0.12 78);outline-offset:2px}.ds-nav-count{margin-left:auto;color:oklch(0.5 0.018 70);font-size:12px;font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "Nav Item Active",
+      "kind": "nav",
+      "refersTo": "nav-item-active",
+      "description": "当前筛选或当前笔记：浅金洗底 + 全周 hairline。",
+      "html": "<button class=\"ds-nav-item is-active\" type=\"button\"><span>工作</span><span class=\"ds-nav-count\">3</span></button>",
+      "css": ".ds-nav-item.is-active{background:oklch(0.78 0.08 78 / 0.22);color:oklch(0.4 0.08 78);font-weight:600;box-shadow:inset 0 0 0 1px oklch(0.78 0.13 78 / 0.35)}.ds-nav-item.is-active .ds-nav-count{color:oklch(0.62 0.12 78)}"
+    },
+    {
+      "name": "Inline Title Input",
+      "kind": "input",
+      "refersTo": "input-inline",
+      "description": "笔记标题输入，无边框，聚焦底部金色线。",
+      "html": "<input class=\"ds-input-title\" type=\"text\" placeholder=\"无标题笔记\" value=\"周报草稿\" />",
+      "css": ".ds-input-title{width:100%;border:none;background:transparent;color:oklch(0.26 0.02 70);font:600 clamp(1.75rem,2.8vw,2.25rem)/1.25 Fraunces,\"Noto Serif SC\",Georgia,serif;letter-spacing:-0.02em;padding:4px 0;outline:none;caret-color:oklch(0.78 0.13 78)}.ds-input-title::placeholder{color:oklch(0.56 0.016 70);font-weight:500}.ds-input-title:focus-visible{box-shadow:inset 0 -2px 0 oklch(0.78 0.13 78)}"
+    },
+    {
+      "name": "Dialog Panel",
+      "kind": "card",
+      "refersTo": "dialog",
+      "description": "确认与信息对话框。",
+      "html": "<div class=\"ds-dialog\"><h2 class=\"ds-dialog-title\">删除笔记</h2><p class=\"ds-dialog-desc\">删除后不可恢复，确定删除这篇笔记吗？</p><div class=\"ds-dialog-actions\"><button class=\"ds-btn-ghost\" type=\"button\">取消</button><button class=\"ds-btn-danger\" type=\"button\">删除</button></div></div>",
+      "css": ".ds-dialog{max-width:420px;padding:22px;border:1px solid oklch(0.91 0.012 78);border-radius:18px;background:oklch(0.995 0.003 78);color:oklch(0.38 0.02 70);box-shadow:0 10px 28px oklch(0.35 0.03 70 / 0.08),0 2px 6px oklch(0.35 0.03 70 / 0.04);font:400 16px/1.55 \"Source Sans 3\",\"Noto Sans SC\",system-ui,sans-serif}.ds-dialog-title{margin:0 0 10px;color:oklch(0.26 0.02 70);font:600 1.2rem/1.3 Fraunces,\"Noto Serif SC\",Georgia,serif;letter-spacing:-0.015em}.ds-dialog-desc{margin:0;color:oklch(0.5 0.018 70);line-height:1.65}.ds-dialog-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:20px}"
+    },
+    {
+      "name": "Empty State",
+      "kind": "custom",
+      "refersTo": "empty-state",
+      "description": "无笔记或未选中时的引导。",
+      "html": "<div class=\"ds-empty\"><div class=\"ds-empty-mark\" aria-hidden=\"true\"></div><h2 class=\"ds-empty-title\">开始记录你的想法</h2><p class=\"ds-empty-desc\">笔记仅保存在当前浏览器，打开即可书写。</p><button class=\"ds-btn-primary\" type=\"button\">新建第一篇笔记</button></div>",
+      "css": ".ds-empty{display:grid;justify-items:center;gap:14px;padding:48px 24px;text-align:center;color:oklch(0.38 0.02 70);font:400 16px/1.55 \"Source Sans 3\",\"Noto Sans SC\",system-ui,sans-serif}.ds-empty-mark{width:72px;height:72px;border-radius:16px;border:1px solid oklch(0.84 0.02 78);background:oklch(0.96 0.03 78)}.ds-empty-title{margin:0;color:oklch(0.26 0.02 70);font:600 1.55rem/1.3 Fraunces,\"Noto Serif SC\",Georgia,serif;letter-spacing:-0.02em}.ds-empty-desc{margin:0;max-width:22rem;color:oklch(0.5 0.018 70);line-height:1.65}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Daylight Desk",
+    "overview": "Local Note 的视觉系统服务于一件事：让人打开页面就能安静、快速地写。它像窗边一张被日光铺亮的书桌，干净明亮，工具就位，不阴郁也不吵。气质对齐 PRODUCT.md 的三词：克制 · 迅捷 · 安静，同时保证界面有阳光感。密度偏低到中等。侧栏承载导航与结构，主区只承载标题与正文。颜色预算留给主操作与状态，不把整页染成手帐墙。本系统明确拒绝：Notion/飞书式重后台密度；AI 紫粉渐变营销页；赤陶手帐厚涂；暗黑赛博/霓虹终端；青绿/天蓝强调；以及整页阴沉炭灰。",
+    "keyCharacteristics": [
+      "高亮近白底 + 日光金强调（Restrained，≤10% 着色；明亮不阴郁）",
+      "衬线仅用于标题与品牌字，UI 标签与按钮一律无衬线",
+      "状态清晰：hover / active / focus / saved / error 可辨",
+      "桌面双栏，移动端抽屉；断点驱动结构变化，不做花哨流体排版",
+      "动效 150–250ms 级，只表达状态，不做编排式进场表演"
+    ],
+    "rules": [
+      {
+        "name": "The One Accent Rule",
+        "body": "日光金只用于主操作、选中与状态，≤10%。",
+        "section": "colors"
+      },
+      {
+        "name": "The Daylight Rule",
+        "body": "主表面必须保持高亮（近白）。禁止整页深灰/炭灰营造「高级暗调」。",
+        "section": "colors"
+      },
+      {
+        "name": "The No-Cyan Rule",
+        "body": "禁止青、天蓝、湖蓝、青绿。",
+        "section": "colors"
+      },
+      {
+        "name": "The No-Green Rule",
+        "body": "禁止绿系品牌色。",
+        "section": "colors"
+      },
+      {
+        "name": "The No-Hand-Journal Rule",
+        "body": "禁止赤陶厚涂与整页厚米色手帐墙；允许极低彩的日光暖底。",
+        "section": "colors"
+      },
+      {
+        "name": "The No-Side-Stripe Rule",
+        "body": "选中态用洗底 + 全周 1px hairline。",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do 把颜色预算花在当前任务上：选中笔记、主按钮、保存/错误状态。",
+      "Do 保持侧栏服务导航、主区服务书写；主区最大内容宽 1280px。",
+      "Do 用 200ms 级 ease-out 做状态过渡；并尊重 prefers-reduced-motion。",
+      "Do 保证正文与关键控件对比度可读；placeholder 不要飘成浅灰装饰。",
+      "Do 文案用动词 + 对象（「新建笔记」「删除分组」），短句直接。",
+      "Do 打开即写：首次空状态提供明确 CTA，不自动塞模板内容。"
+    ],
+    "donts": [
+      "Don't 使用绿色/青绿/薄荷绿作为品牌强调色（No-Green Rule）。",
+      "Don't 使用青、天蓝、湖蓝作为品牌或状态色（No-Cyan Rule）。",
+      "Don't 把界面做成阴沉炭灰/深灰洞；主表面必须明亮（Daylight Rule）。",
+      "Don't 做成 Notion/飞书式重后台：复杂侧栏、卡片墙、企业 SaaS 密度。",
+      "Don't 使用 AI 紫粉渐变落地页语言：营销感、装饰堆叠、不务实。",
+      "Don't 使用暖米色手帐风：纸感底、赤陶强调、过度文艺。",
+      "Don't 使用暗黑赛博/霓虹终端：炫技高对比、开发者玩具感。",
+      "Don't 用 display 衬线字体做按钮或 nav 标签。",
+      "Don't 用 border-left/box-shadow 侧条装饰选中态；用洗底 + 全周 hairline。",
+      "Don't 给 placeholder 再叠一层 opacity 导致对比失败。",
+      "Don't 加纸张噪点、装饰双光晕或玻璃拟态作为默认氛围。",
+      "Don't 编排整页入场动画；产品应直接进入任务。",
+      "Don't 同时堆叠宽阴影 + 描边制造 ghost-card。",
+      "Don't 把圆角推到 24px+ 的「气球卡片」；组件圆角顶在 14–18px。"
+    ]
+  }
+}
