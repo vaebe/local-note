@@ -49,14 +49,31 @@ vp preview
 | `vp run build`          | `vue-tsc -b` + 生产构建            |
 | `pnpm run pages:dev`    | 构建后用 Wrangler 本地预览 Pages   |
 | `pnpm run pages:deploy` | 构建并部署到 Cloudflare Pages      |
+| `pnpm run cf:deploy`    | 仅部署已有 `dist`（CI 构建后用）   |
 
-首次部署 Cloudflare 前执行：`npx wrangler login`。
+首次部署前登录：`pnpm dlx wrangler@4.28.0 login`。
 
-Git 连接 Cloudflare Dashboard 时建议：
+### Cloudflare 构建设置
 
-- Build command：`pnpm install && pnpm run build`
-- Build output：`dist`
-- Node.js：22 或 24
+构建日志里的失败点：
+
+1. **Build 已成功**（`pnpm run build` → `dist/`）
+2. **Deploy 失败**：`npx wrangler deploy` 走 npm，与 `devEngines.packageManager = pnpm` 冲突 → `EBADDEVENGINES`
+
+请把控制台改成：
+
+| 项                     | 值                                                 |
+| ---------------------- | -------------------------------------------------- |
+| Build command          | `pnpm install --frozen-lockfile && pnpm run build` |
+| Deploy command         | `pnpm run cf:deploy`                               |
+| Build output directory | `dist`                                             |
+| Node.js                | 22 或 24                                           |
+
+说明：
+
+- 必须用 **pnpm**，不要用 `npx wrangler ...`
+- 部署命令必须是 **`pages deploy`**，不是裸 `wrangler deploy`
+- 若 Pages 已配置「构建产物目录自动发布」，Deploy command 可留空
 
 ## 目录结构
 

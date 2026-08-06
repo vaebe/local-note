@@ -8,8 +8,9 @@
     "build": "vue-tsc -b && vp build",
     "preview": "vp preview",
     "prepare": "vp config",
-    "pages:dev": "vp run build && npx wrangler pages dev dist",
-    "pages:deploy": "vp run build && npx wrangler pages deploy dist"
+    "pages:dev": "vp run build && pnpm dlx wrangler@4.28.0 pages dev dist",
+    "pages:deploy": "vp run build && pnpm dlx wrangler@4.28.0 pages deploy dist",
+    "cf:deploy": "pnpm dlx wrangler@4.28.0 pages deploy dist"
   },
   "dependencies": {
     "vue": "^3.5.40"
