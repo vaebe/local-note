@@ -202,14 +202,18 @@ defineExpose({ setGroupRenameError });
         <div v-if="visibleNotes.length === 0" class="sidebar__empty-hint">当前没有笔记</div>
         <ul v-else class="note-list">
           <li v-for="note in visibleNotes" :key="note.id" class="note-list__item">
-            <button
-              type="button"
+            <!-- 使用 div 避免原生按钮的文字基线影响垂直居中，同时保留键盘操作语义。 -->
+            <div
               class="note-list__button"
               :class="{ 'is-active': note.id === selectedNoteId }"
+              role="button"
+              tabindex="0"
               @click="emit('select-note', note.id)"
+              @keydown.enter.prevent="emit('select-note', note.id)"
+              @keydown.space.prevent="emit('select-note', note.id)"
             >
-              <span class="note-list__title">{{ noteTitle(note) }}</span>
-            </button>
+              {{ noteTitle(note) }}
+            </div>
             <div class="menu note-list__menu">
               <button
                 type="button"

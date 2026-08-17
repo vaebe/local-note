@@ -426,6 +426,23 @@ button:disabled {
     box-shadow var(--duration) var(--ease);
 }
 
+/* 菜单项采用固定高度、等值行高和纯水平内边距，由 flex 稳定居中文字。 */
+.group-section__name,
+.note-list__button {
+  height: 36px;
+  min-height: 36px;
+  padding: 0 11px;
+  line-height: 36px;
+  cursor: pointer;
+}
+
+/* 标题直接作为 flex 容器文本渲染，截断行为由交互项自身负责。 */
+.note-list__button {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .nav-item:hover,
 .group-section__name:hover,
 .note-list__button:hover {
@@ -439,8 +456,12 @@ button:disabled {
 .note-list__button.is-active {
   background: var(--bg-active);
   color: var(--accent-ink);
-  font-weight: 600;
   box-shadow: inset 0 0 0 1px oklch(0.78 0.13 var(--hue) / 0.35);
+}
+
+/* 固定入口保留原有强调；分组和笔记仅用颜色与背景表达选中态，避免切换字重。 */
+.nav-item.is-active {
+  font-weight: 600;
 }
 
 .nav-item__count,
@@ -529,12 +550,6 @@ button:disabled {
   align-items: center;
   gap: 2px;
   border-radius: var(--radius-sm);
-}
-
-.note-list__title {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .note-list__menu {

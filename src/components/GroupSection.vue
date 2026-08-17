@@ -130,10 +130,19 @@ defineExpose({ setRenameError });
           @blur="submitRename"
         />
       </template>
-      <button v-else type="button" class="group-section__name" @click="emit('select')">
-        <span class="group-section__label">{{ group.name }}</span>
-        <span class="group-section__count">{{ noteCount }}</span>
-      </button>
+      <!-- 使用 div 避免原生按钮的文字基线影响垂直居中，同时保留键盘操作语义。 -->
+      <div
+        v-else
+        class="group-section__name"
+        role="button"
+        tabindex="0"
+        @click="emit('select')"
+        @keydown.enter.prevent="emit('select')"
+        @keydown.space.prevent="emit('select')"
+      >
+        <div class="group-section__label">{{ group.name }}</div>
+        <div class="group-section__count">{{ noteCount }}</div>
+      </div>
 
       <div class="group-section__actions">
         <button
